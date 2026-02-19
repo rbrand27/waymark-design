@@ -4,24 +4,28 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-**waymark-design** is a design-focused repository for Waymark. It is in early/initial setup — no build system, dependencies, or framework have been configured yet.
+**waymark-design** is a React web app for Waymark, built with Vite.
 
-## Repository Structure
+## Commands
+
+- `npm run dev` — Start dev server
+- `npm run build` — Production build
+- `npm run preview` — Preview production build locally
+
+## Tech Stack
+
+- **React 19** — UI framework
+- **Vite 6** — Build tool and dev server
+- **@vitejs/plugin-react** — React Fast Refresh support
+
+## Project Structure
 
 ```
-waymark-design/
-├── README.md        # Placeholder (contains "Test")
-├── template.html    # Empty HTML template
-└── CLAUDE.md        # This file
+src/
+├── main.jsx    # Entry point, renders App into #root
+├── App.jsx     # Root component
+├── App.css     # App-level styles
+└── index.css   # Global styles and CSS reset
 ```
 
-## Current State
-
-- No package.json or dependency management
-- No build tooling, linting, or formatting configuration
-- No test framework or tests
-- No established tech stack or architecture patterns
-
-## Notes
-
-This CLAUDE.md should be updated as the project takes shape — add build commands, architecture decisions, and conventions as they are established.
+`index.html` at the project root is the HTML template that loads `src/main.jsx`.
