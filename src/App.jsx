@@ -1,10 +1,10 @@
 import './App.css'
+import PharmacyOpportunities from './components/PharmacyOpportunities'
 
 function App() {
   return (
     <div className="app">
-      <h1>Waymark Design</h1>
-      <p>Welcome to the Waymark Design project.</p>
+      <PharmacyOpportunities />
     </div>
   )
 }
